@@ -7,7 +7,7 @@
 
 
 <div id="event-create-container" class="col-md-6 offset-md-3">
-<h2>Crie um Evento</h2>
+<h1>Crie um Evento</h1>
     <form action="/events" method="POST">
         @csrf
         <div class="form-group">
