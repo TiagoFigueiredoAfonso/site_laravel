@@ -37,8 +37,19 @@
         </div>
     </header>
     </nav>
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                    <p class="msg">{{ session('msg') }}</p>
+                @endif
+                
+            </div>
+            @yield('content') 
+        </div>
+    </main>
     
-    @yield('content')
+   
     <footer>
         <p>Site de Eventos &copy; 2022</p>
     </footer>
