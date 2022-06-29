@@ -10,6 +10,8 @@ class Event extends Model
     use HasFactory;
 
     protected $casts = [
-        'items' => 'array'
+        'items' => 'array' // informar que o items é um array json
     ];
+
+    protected $dates = ['date'];//informa q esse campo é data
 }

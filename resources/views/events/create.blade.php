@@ -9,12 +9,16 @@
     <form action="/events" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="form-group">
-            <label for="image">Evento:</label>
+            <label for="image">Imagem:</label>
                 <input type="file" id="image" name="image" class="from-control-file">
         </div>
         <div class="form-group">
             <label for="title">Evento:</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Nome do evento">
+        </div>
+        <div class="form-group">
+            <label for="date">Data do Evento:</label>
+            <input type="date" class="form-control" name="date" id="date">
         </div>
         <div class="form-group">
             <label for="title">Cidade:</label>
